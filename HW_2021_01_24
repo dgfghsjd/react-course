@@ -1,0 +1,487 @@
+<!-- 과제내용 : html 로 "레이아웃 배치"구현하기(https://coderthemes.com/zodkoo/light/index_3.html#clients) -->
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>test</title>
+		<style>
+			#header {
+				display: flex;
+				align-items: center;
+				margin: 0px 50px 0px 50px;
+			 }
+			.menubutton {
+				display: flex;
+				justify-content: space-between;
+			}
+			.menus1 {
+				margin-left: 30px;
+				margin-right: 420px;				
+			}
+			#description1 {
+				display: flex;
+				background-color: green;
+				justify-content: space-between;
+			}
+			.input {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 20px;
+			}
+			#inputBox {
+				background-color: beige;
+				box-shadow: 0 8px 35px 0 rgba(73, 80, 87, 0.5);
+				margin: 50px;
+				padding: 50px;
+			}
+			#content1 {
+				width: 40%;
+				background-color: bisque;
+				margin-left: 50px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			#content2 {
+				width: 45%;
+				background-color: bisque;
+				margin-left: 50px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			#getStartedButton {
+				width: 100%;
+		    }
+			#features {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+    		.featureBox {
+				display: flex;
+			}
+			#Plans {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: green;
+			}
+    		.PlanBox {
+				display: flex;
+			}
+			#Clients {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: lightblue;
+			}
+			.ClientBox {
+				display: flex;
+			}
+		</style>
+	</head>
+
+	<body style="margin-bottom: 500px">
+		<div id="header">
+			<img
+			  id="logo"
+			  width="50"
+			  style="padding:10px 30px 15px 0px;"
+			  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+		    />
+			<div class="menubutton">
+				<div class="menus1">   
+					<button>Home</button>
+					<button>Features</button>
+					<button>Plans</button>
+					<button>Clients</button>
+					<button>Pages</button>
+
+				</div>
+				<div class="menus2"> <!-- Q1. 여기 간격 어떻게 띄우는지 -->
+					<button>Login</button>
+					<button>Try for Free</button>
+				</div>
+			</div>
+		</div>
+		<div id="description1">
+		  <div id="content1">
+			<p>Zodkoo is a fully responsive landing page template</p>
+			<p>Zodkoo is a fully responsive landing page built using the latest Bootstrap framework. It's designed for describing your app, agency or business. The clean and well commented code allows easy customization of the theme.</p>
+			<div>
+			  <button>Get Started</button>
+			  <span> or </span>
+			  <img
+				  width="20"
+				  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+				/>
+			  <button>Watch video</button>
+			</div>
+		  </div>
+		  <div id="inputBox">
+			<p align="center">REGISTER FOR FREE</p>
+			<div class="input">
+			  <input type="text" name="fullname" placeholder="Full name" style="width:300px; font-size:20px;"/>
+			</div>
+			<div class="input">
+			  <input type="text" name="email" placeholder="Email Address" style="width:300px;font-size:20px;" />
+			</div>
+			<div class="input">
+			  <input type="text" name="username" placeholder="User name" style="width:300px;font-size:20px;"/>
+			</div>
+			<div class="input">
+			  <input type="text" name="password" placeholder="Password" style="width:300px;font-size:20px;"/>
+			</div>
+			<button id="getStartedButton">START NOW</button>
+			<p style="font-size:10px">By registering you agree to the Zodkoo Terms of Use</p>
+		  </div>
+    	</div>
+		<div id="description2">
+		  <div style="display: flex; flex-direction: column; align-items: center;" >
+			<img
+				src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+				width="40"
+			/>
+			<p>Clean and Ultra Modern Design</p>
+		  </div>
+		<div style="display: flex">
+		  <div id="content2">
+			<p>Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</p>
+			<p>The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.We put a lot of effort in design, as it’s the most important ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.We put a lot of effort in design, as it’s the most important ingredient of successful website.</p>
+			<div>
+			  <button>LEARN MORE</button>
+			</div>
+		  </div>
+		  <div>
+			  <img
+				  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+				  width="500px"
+			  />
+		  </div>
+		</div>
+		</div>
+		<div id="features">
+			  <div style="display: flex; flex-direction: column; align-items: center">
+				<p style="margin-top: 100px;">It's designed for describing your app, agency or business</p>
+				<p style="width:60%;" align="center">The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.</p>
+			  </div>
+			  <div>
+				<div class="featureBox">
+				  <div>
+					<img
+					  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+					  width="40"
+					/>
+					<p>Strategy Solutions</p>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				  </div>
+				  <div>
+					<img
+					  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+					  width="40"
+					/>
+					<p>Digital Design</p>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin litera..</p>
+				  </div>
+				  <div>
+					<img
+					  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+					  width="40"
+					/>
+					<p>Analytics Solutions</p>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+				  </div>
+				</div>
+				<div class="featureBox">
+				  <div>
+					<img
+					  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+					  width="40"
+					/>
+					<p>Strategy Solutions</p>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				  </div>
+				  <div>
+					<img
+					  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+					  width="40"
+					/>
+					<p>Digital Design</p>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin litera..</p>
+				  </div>
+				  <div>
+					<img
+					  src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+					  width="40"
+					/>
+					<p>Analytics Solutions</p>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		<div id="Plans">
+			  <div style="display: flex; flex-direction: column; align-items: center">
+				<p style="margin-top: 100px;">Choose your perfect plan</p>
+				<p style="width:60%;" align="center">The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.</p>
+			  </div>
+			  <div>
+				<div class="PlanBox">
+				  <div align="center" style="width: 300px">
+					<p>BASIC</p>
+					<p>$19</p>
+					<p>Per Month</p>
+					<div style="display: flex; flex-direction: column; width: 60%" align="left">
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>10 GB Storege</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>500 GB Bandwidth</span>
+						</div>
+						<div >
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>Email Support</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>24x7 Support</span>
+						</div>
+					  </div>
+					<button> Sign up</button>
+				  </div>
+				  <div align="center" style="width: 300px">
+					<p>PREMIUM</p>
+					<p>$29</p>
+					<p>Per Month</p>
+					<div style="display: flex; flex-direction: column; width: 60%" align="left">
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>10 GB Storege</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>500 GB Bandwidth</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>Email Support</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>24x7 Support</span>
+						</div>
+					  </div>
+					<button> Sign up</button>
+				  </div>
+				  <div align="center" style="width: 300px">
+					<p>DEVELOPER</p>
+					<p>$39</p>
+					<p>Per Month</p>
+					<div style="display: flex; flex-direction: column; width: 60%" align="left">
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>10 GB Storege</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>500 GB Bandwidth</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>Email Support</span>
+						</div>
+						<div>
+						  <img
+							id="logo"
+							width="20"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+						  <span>24x7 Support</span>
+						</div>
+					  </div>
+					<button> Sign up</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		<div id="Clients">
+			<div style="display: flex; flex-direction: column; align-items: center">
+				<p style="margin-top: 100px;">Trusted by Thousands</p>
+				<p style="width:60%;" align="center">The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.</p>
+			</div>
+			<div align="center">
+				<img
+					 id="logo"
+					 width="15%"
+					 style="margin-top: 50px; 	margin-right: 50px; margin-bottom: 50px;"
+					 src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+				/>
+				<img
+					 id="logo"
+					 width="15%"
+					 style="margin-top: 50px; margin-right: 50px; margin-bottom: 50px;"
+					 src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+				/>
+				<img
+					 id="logo"
+					 width="15%"
+					 style="margin-top: 50px; margin-right: 50px; margin-bottom: 50px;"
+					 src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+				/>
+				<img
+					 id="logo"
+					 width="15%"
+					 style="margin-top: 50px; margin-right: 50px; margin-bottom: 50px;"
+					 src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+				/>		 
+			</div>
+			<div class="ClientBox">
+				  <div align="center" style="width: 300px; padding: 20px;">
+					<p style="padding: 20px; background-color:#E16567 ">“ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.”</p>
+					<div>
+						<div style="display: flex;flex-direction: row">
+						  <img
+							width="50" height="50" style="padding-right: 15px"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+							<div align="left">
+							  <span>Calebogden<br></span>
+							  <span>Another company , City</span>
+							</div>
+						</div>
+					  </div>
+				  </div>
+				  <div align="center" style="width: 300px; padding: 20px;">
+					<p style="padding: 20px; background-color:#E16567 ">“ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.”</p>
+					<div>
+						<div style="display: flex;flex-direction: row">
+						  <img
+							width="50" height="50" style="padding-right: 15px"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+							<div align="left">
+							  <span>Dancounsell<br></span>
+							  <span>Another company , City</span>
+							</div>
+						</div>
+					  </div>
+				  </div>
+				  <div align="center" style="width: 300px; padding: 20px;">
+					<p style="padding: 20px; background-color:#E16567 ">“ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.”</p>
+					<div>
+						<div style="display: flex;flex-direction: row">
+						  <img
+							width="50" height="50" style="padding-right: 15px"
+							src="https://lh3.googleusercontent.com/FK8EcHV1SJGHeTUJCsUhCQl0hmQu-QbC4wG6bM59S0v-rLv-jQl16YC3LQ4x-ZpPwS1cUs_4Idap57kYgcTCOQFB"
+						  />
+							<div align="left">
+							  <span>Indianguru<br></span>
+							  <span>Another company , City</span>
+							</div>
+						</div>
+					  </div>
+				  </div>
+				</div>
+		</div>
+		<div id="Newsletter" style="background-color: #225B8B">
+			<div style="display: flex; flex-direction: column; align-items: center">
+				<p style="margin-top: 100px;">Be engaged Newsletter</p>
+				<p style="width:60%;" align="center">The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.</p>
+			<div class="input">
+			  <input type="text" name="fullname" placeholder="Enter e-mail address" style="font-size:20px;"/>
+			</div>
+			<button>SUBSCRIBE</button>
+				<p>You can un-subscribe at any time.</p>
+			</div>
+		</div>
+		<div
+      style="
+        display: flex;
+		flex-direction: column;
+        justify-content: space-between;
+        background-color: darkgray;
+        padding: 40px;
+      "
+    >	
+			<div style="display: flex; flex-direction: row; width: 100%;">
+				<div style="display: flex; flex-direction: column; padding: 40px; width: 25%;">
+					<p>Zodkoo</p>
+					<p>Home</p>
+					<p>Features</p>
+					<p>Team</p>
+					<p>FAQ</p>
+				</div>
+				<div style="display: flex; flex-direction: column; padding: 40px; width: 25%;">
+					<p>Social</p>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Behance</p>
+					<p>Dribble</p>
+				  </div>
+				<div style="display: flex; flex-direction: column; padding: 40px; width: 25%;">
+					<p>Support</p>
+					<p>Help & Support</p>
+					<p>Privacy Policy</p>
+					<p>Terms & Conditions</p>
+				</div>
+				<div style="display: flex; flex-direction: column; padding: 40px; width: 25%;">
+				  <p>Contact</p>
+				  <p>795 Folsom Ave, Suite 600</p>
+				  <p>San Francisco, CA 94107</p>
+				  <p>P: (123) 456-7890</p>
+				  <p>E: email@email.com</p>
+				</div>
+			</div>
+			<div align="center">
+				<p>2020 © Zodkoo</p>
+			</div>
+		</div>			
+	</body>
+</html>
